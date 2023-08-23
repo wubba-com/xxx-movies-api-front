@@ -1,38 +1,149 @@
-.App {
-  text-align: center;
+.container {
+  max-width: 1198px;
+  width: 100%;
+  margin-left: auto;
+  box-sizing: border-box;
+  margin-right: auto;
+  display: block;
+
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo_wrapper {
+  max-width: 233px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo_wrapper .logo {
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 120%;
+  /* 84px */
+  letter-spacing: -2.1px;
+  color: #000
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.logo_wrapper .logo_description {
+  font-size: 20px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.6px;
+  color: var(--unnamed, #736969);
+}
+
+.search_wrapper {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  align-content: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.search_movied {
+  display: flex;
+  width: 100%;
+  padding: 18px 18px;
+  justify-content: center;
+  align-items: center;
+  gap: 118px;
+  font-size: 20px;
+
+  border-radius: 20px;
+  border: 2px solid var(--unnamed, #FF9D0A);
+  background: #FFF;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bx-shadow {
+  /* Тенька */
+  border-radius: 20px;
+  background: #FFF;
+  box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.25);
+}
+
+.menu_wrapper {
+  display: flex;
+  width: 100px;
+  height: 60px;
+  /* padding: 8px 16px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu_wrapper .menu_btn {
+  gap: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.account_wrapper {
+  display: flex;
+  width: 120px;
+  height: 60px;
+  /* padding: 8px 16px; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.account_wrapper .account_btn {
+  gap: 8px;
+  flex-shrink: 0;
+  cursor: pointer;
+}
+
+.fs {
+  color: var(--black, #2B2B2B);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.6px;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-91 {
+  margin-right: 91px;
+}
+
+.mt-45 {
+  margin-top: 45px;
+}
+
+.btns_wrapper {
+  height: 24px;
+  display: inline-flex;
+  padding: 8px 19px 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn_tops_wrapper {
+  display: inline-flex;
+  padding: 8px 19px 12px 24px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.btn_my_list_wrapper {
+  display: inline-flex;
+  padding: 8px 19px 12px 24px;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.btn_collection_wrapper {
+  display: inline-flex;
+  padding: 8px 24px 12px 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
