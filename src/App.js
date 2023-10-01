@@ -1,19 +1,13 @@
-import logo from './logo.svg';
-import { Container } from '@mui/material';
+import AuthProvider from "./provider/auth";
+import Routes from "./routes";
 import './App.css';
-import Header from './Header';
 
-function App() {
-  return (
-    <div className="App">
-      <div className={"container"}>
-        <Header />
-      </div>
-      <Container maxWidth="lg">
-
-      </Container>
-    </div>
-  );
+const App = () => {
+    return (
+        <AuthProvider>
+            <Routes />
+        </AuthProvider>
+    );
 }
 
 export default App;
